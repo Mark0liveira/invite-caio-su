@@ -57,6 +57,7 @@ export default function Home() {
         <div className="w-85">
           <h2 className="font-light">Nossa lista de casamento está na plataforma Icasei! Optamos por este formato de presentes no intuito de trazer mais praticidade a todos. Clique no botão abaixo para acessar a lista, agradecemos pelo carinho, ficaremos muito felizes, Deus abençoe!</h2>
         </div>
+
         <a href="https://sites.icasei.com.br/suelenecaio/home" target="_blank"><button>Acessar lista</button></a>
 
         <div className="ramos-footer">
@@ -135,6 +136,7 @@ export default function Home() {
 
         .arranjo-container {
           margin-top: 30px;
+          margin-left: 20px;
         }
 
         .img-casal{
@@ -178,6 +180,8 @@ export default function Home() {
           font-weight: 200;
           font-size: 24px;
           text-align: center;
+          font-family: caramella;
+          color: #2E324A;
         }
 
         .pais {
@@ -234,6 +238,15 @@ export default function Home() {
           border: 1px solid #e99b2438;
         }
 
+        .card-1:hover{
+          filter: drop-shadow(0px 10px 20px rgba(89, 174, 126, 0.5));
+        }
+
+        .card-2:hover{
+          filter: drop-shadow(0px 10px 20px rgba(89, 174, 126, 0.5));
+        }
+        
+
         @media (max-width : 379px) {
           .paper-white {
             width: 100vw;
@@ -252,13 +265,21 @@ export default function Home() {
           }
 
           .pais-bloco {
-            width: 80%;
+            width: 90%;
           }
           .su-caio-img {
             width: 150px;
           }
           .font-32 {
-            font-size: 14px !important;
+            font-size: 12px !important;
+          }
+          button {
+            width: 154px;
+            height: 25px;
+            font-size: 12px;
+          }
+          .card-1 {
+            margin-bottom: 20px;
           }
         }
 
@@ -280,7 +301,7 @@ export default function Home() {
             width: 250px;
           }
           .font-32 {
-            font-size: 20px !important;
+            font-size: 16px !important;
           }
         }
 
