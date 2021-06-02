@@ -303,6 +303,9 @@ export default function Home() {
           .font-32 {
             font-size: 16px !important;
           }
+          .card-1 {
+            margin-bottom: 20px;
+          }
         }
 
         @media (min-width : 501px) and (max-width : 800px) {
