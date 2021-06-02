@@ -3,9 +3,15 @@ export default function Home() {
     <div className="container">
 
       <div className="paper-white">
-        <div className="arranjo-container">
-          <img className="arranjo-img" src="/logo-suelenecaio.svg"></img>
+        <div className="ramos-header">
+          <img className="ramo-left" src="/ramo-1.png"></img>
+          <div className="arranjo-container">
+            <img className="arranjo-img" src="/logo-suelenecaio.svg"></img>
+          </div>
+          <img className="ramo-right" src="/ramo-2.png"></img>
         </div>
+        
+        
 
         <h2 className="font-light text-center">Nós amamos porque ele nos amou primeiro... 1 João 4:19</h2>
 
@@ -22,16 +28,16 @@ export default function Home() {
         </div>
 
         <div className="arranjo-container">
-          <img className="arranjo-img" src="/su-caio.svg"></img>
+          <img className="su-caio-img" src="/su-caio.svg"></img>
         </div>
 
         <h2 className="w-70 font-light text-center">Com a benção de Deus convidam para cerimônia de seu casamento </h2>
 
-        <hr className="w-70"></hr>
+        <hr/>
         <div>
           <h2 className="font-light text-center font-32">14 DE AGOSTO DE 2021&nbsp;&nbsp;&nbsp;&nbsp;16h00</h2>
         </div>
-        <hr className="w-70"></hr>
+        <hr/>
 
         <h2 className="w-70 font-light text-center">A cerimônia será realizada no Santuário São Francisco de Assis
         - R. Francisco Derosso, 715 - Xaxim, Curitiba - PR, 81710-000</h2>
@@ -49,10 +55,18 @@ export default function Home() {
         </div>
 
         <div className="w-85">
-          <h2 className="font-light">Nossa lista de casamento está na plataforma EBANX Beep!! Como boa parte da nossa casa está mobiliada, optamos por está forma de presentes! Clique no botão abaixo para acessar a lista... agradecemos pelo carinho, ficaremos muito felizes, Deus abençoe!!</h2>
+          <h2 className="font-light">Nossa lista de casamento está na plataforma Icasei! Optamos por este formato de presentes no intuito de trazer mais praticidade a todos. Clique no botão abaixo para acessar a lista, agradecemos pelo carinho, ficaremos muito felizes, Deus abençoe!</h2>
         </div>
-        <button>Acessar lista</button>
+        <a href="https://sites.icasei.com.br/suelenecaio/home" target="_blank"><button>Acessar lista</button></a>
+
+        <div className="ramos-footer">
+          <img className="ramo-left" src="/ramo-3.png"></img>
+          <img className="ramo-right" src="/ramo-4.png"></img>
+        </div>
+
       </div>
+
+     
 
       <style jsx global>{`
         @font-face {
@@ -78,7 +92,7 @@ export default function Home() {
           background: #FFFFFF;
           height: 100%;
           width: 80vw;
-          padding: 40px 0px 200px 0px;
+          padding: 0px;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -120,7 +134,7 @@ export default function Home() {
         }
 
         .arranjo-container {
-          margin: 25px;
+          margin-top: 30px;
         }
 
         .img-casal{
@@ -139,9 +153,13 @@ export default function Home() {
           color: white;
           font-style: normal;
           font-weight: normal;
-          font-size: 16px;
+          font-size: 18px;
           line-height: 19px;
           margin: 2rem 0;
+        }
+
+        button:hover {    
+          filter: drop-shadow(10px 6px 12px #10a1dc);
         }
 
         .w-85 {
@@ -159,6 +177,7 @@ export default function Home() {
         .font-light {
           font-weight: 200;
           font-size: 24px;
+          text-align: center;
         }
 
         .pais {
@@ -167,6 +186,10 @@ export default function Home() {
           align-items: center;
           align-content: center;
           justify-content: center;
+        }
+
+        .su-caio-img {
+          width: 350px;
         }
 
         .pais-bloco {
@@ -186,6 +209,97 @@ export default function Home() {
           justify-content: space-around;
           align-content: center;
           margin: 20px 0;
+        }
+
+        .ramos-header {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          flex-direction: row;
+          align-content: space-between;
+          align-items: flex-start;
+        }
+
+        .ramos-footer {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-content: space-between;
+          justify-content: space-between;
+          width: 100%;
+        }
+
+        hr {
+          width: 70%;
+          border: 1px solid #e99b2438;
+        }
+
+        @media (max-width : 379px) {
+          .paper-white {
+            width: 100vw;
+          }
+          .arranjo-img {
+            width: 100px;
+          }
+          .ramo-left {
+            width: 36px;
+          }
+          .ramo-right {
+            width: 56px;
+          }
+          .font-light {
+            font-size: 12px;
+          }
+
+          .pais-bloco {
+            width: 80%;
+          }
+          .su-caio-img {
+            width: 150px;
+          }
+          .font-32 {
+            font-size: 14px !important;
+          }
+        }
+
+        @media (min-width: 380px) and (max-width : 500px) {
+          .paper-white {
+            width: 100vw;
+          }
+          .font-light {
+            font-size: 17px;
+          }
+          .arranjo-img {
+            width: 200px;
+          }
+
+          .pais-bloco {
+            width: 80%;
+          }
+          .su-caio-img {
+            width: 250px;
+          }
+          .font-32 {
+            font-size: 20px !important;
+          }
+        }
+
+        @media (min-width : 501px) and (max-width : 800px) {
+          .paper-white {
+            width: 90vw;
+          }
+          .pais-bloco {
+            width: 80%;
+          }
+          .font-light {
+            font-size: 17px;
+          }
+          .su-caio-img {
+            width: 300px;
+          }
+          .font-32 {
+            font-size: 20px !important;
+          }
         }
 
         * {
