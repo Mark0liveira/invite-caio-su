@@ -4,11 +4,11 @@ export default function Home() {
 
       <div className="paper-white">
         <div className="ramos-header">
-          <img className="ramo-left" src="/ramo-1.png"></img>
+          <img className="ramo-img ramo-left" src="/ramo-1.png"></img>
           <div className="arranjo-container">
             <img className="arranjo-img" src="/logo-suelenecaio.svg"></img>
           </div>
-          <img className="ramo-right" src="/ramo-2.png"></img>
+          <img className="ramo-img ramo-right" src="/ramo-2.png"></img>
         </div>
         
         
@@ -61,8 +61,8 @@ export default function Home() {
         <a href="https://sites.icasei.com.br/suelenecaio/home" target="_blank"><button>Acessar lista</button></a>
 
         <div className="ramos-footer">
-          <img className="ramo-left" src="/ramo-3.png"></img>
-          <img className="ramo-right" src="/ramo-4.png"></img>
+          <img className="ramo-img ramo-left" src="/flowerleftdown.png"></img>
+          <img className="ramo-img ramo-right" src="/flowerrightdown.png"></img>
         </div>
 
       </div>
@@ -156,7 +156,7 @@ export default function Home() {
           font-style: normal;
           font-weight: normal;
           font-size: 18px;
-          line-height: 19px;
+          line-height: 20px;
           margin: 2rem 0;
         }
 
@@ -231,6 +231,7 @@ export default function Home() {
           align-content: space-between;
           justify-content: space-between;
           width: 100%;
+          align-items: flex-end;
         }
 
         hr {
@@ -254,12 +255,6 @@ export default function Home() {
           .arranjo-img {
             width: 100px;
           }
-          .ramo-left {
-            width: 36px;
-          }
-          .ramo-right {
-            width: 56px;
-          }
           .font-light {
             font-size: 12px;
           }
@@ -280,6 +275,9 @@ export default function Home() {
           }
           .card-1 {
             margin-bottom: 20px;
+          }
+          .ramo-img {
+            height: 4em;
           }
         }
 
@@ -306,6 +304,9 @@ export default function Home() {
           .card-1 {
             margin-bottom: 20px;
           }
+          .ramo-img {
+            height: 7em;
+          }
         }
 
         @media (min-width : 501px) and (max-width : 800px) {
@@ -323,6 +324,9 @@ export default function Home() {
           }
           .font-32 {
             font-size: 20px !important;
+          }
+          .ramo-img {
+            height: 8em;
           }
         }
 
