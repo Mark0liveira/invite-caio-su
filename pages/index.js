@@ -180,7 +180,7 @@ export default function Home() {
           font-weight: 200;
           font-size: 24px;
           text-align: center;
-          font-family: caramella;
+          font-family: caramella !important;
           color: #2E324A;
         }
 
